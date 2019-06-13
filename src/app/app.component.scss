@@ -1,6 +1,76 @@
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px 1fr;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+
+  .nav-header {
+    .top-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 5px 0;
+
+      nav {
+        a {
+          padding: 20px;
+          color: #56575c;
+          font-family: "Myriad Pro";
+          font-size: 15px;
+          font-weight: 400;
+          text-decoration: none;
+          display: inline-block;
+          transition: .25s;
+
+          &:hover {
+            color: #00248b;
+          }
+
+          &.active {
+            color: #00248b;
+          }
+        }
+      }
+    }
+
+    .bottom-header {
+      display: flex;
+
+      .mat-button {
+        background-color: #00248b;
+        border-radius: 0;
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  mat-select {
+    margin-left: 20px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #528ad5;
+    font-family: "Roboto Condensed";
+    text-decoration: underline;
+    text-transform: uppercase;
+
+    ::ng-deep .mat-select-value-text {
+      color: #528ad5;
+      font-family: "Roboto Condensed";
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+
+    .mat-select-value-text {
+      color: #528ad5;
+      font-family: "Roboto Condensed";
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+  }
 }

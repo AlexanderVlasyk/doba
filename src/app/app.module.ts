@@ -8,7 +8,12 @@ import { MainComponent } from './main/main.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { MatSelectModule } from '@angular/material/select';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCheckboxModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'news', component: NewsComponent },
@@ -34,7 +39,7 @@ const appRoutes: Routes = [
     MainComponent,
     AboutUsComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     RouterModule.forRoot(
@@ -42,7 +47,13 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
