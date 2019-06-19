@@ -1,6 +1,6 @@
 <header class="header">
   <a routerLink="/main" class="logo">
-    <img src="img/logo.png" alt="Logo" />
+    <img  src="{{logoUrl}}" alt="{{logoName}}" />
   </a>
   <div class="nav-header">
     <div class="top-header">
@@ -56,15 +56,26 @@
     </div>
   </div>
 </header>
+
 <router-outlet></router-outlet>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="item info">
-        <h2>Зв’яжіться з нами</h2>
+        <h2 class="title">Зв’яжіться з нами</h2>
+        <p>
+          Україна<br>
+          Львівска область<br>
+          Львів, вул. Стрийська 75 А
+        </p>
+          <a href="#">+38 (066) 034 30 89</a>
+          <br><span>–</span><br>
+          <a href="#">Doba@gmail.com</a>
+        
       </div>
       <div class="item nav-footer">
-        <h2>Навігація</h2>
+        <h2 class="title">Навігація</h2>
         <ul>
           <li><a routerLink="/main" routerLinkActive="active">Головна</a></li>
           <li><a routerLink="/about-us" routerLinkActive="active">Про нас</a></li>
@@ -73,7 +84,7 @@
         </ul>
       </div>
       <div class="item add">
-        <h2>ДОДАТКОВО</h2>
+        <h2 class="title">ДОДАТКОВО</h2>
         <ul>
           <li><a href="#">Історична освіта</a></li>
           <li><a href="#">Громадська освіта</a></li>
@@ -81,23 +92,50 @@
         </ul>
       </div>
       <div class="item ask">
-        <h2>Виникли запитання чи пропозиції?</h2>
+        <h2 class="title">Виникли запитання чи пропозиції?</h2>
         <p>Перейдіть у розділ “Контакти” та залиште ваше повідомлення</p>
-        <a href="#">КОНТАКТИ</a>
+        <a class="batton" href="#">КОНТАКТИ</a>
       </div>
     </div>
     <div class="footer-bootom">
-      <div>
+      <div class="left-item">
         <p>
-          © Сайт курсу з громадянської освіти розроблено в межах «Програми сприяння громадській активності "Долучайся!"»,
+          © Сайт курсу з громадянської освіти розроблено в межах «Програми сприяння громадській активності "Долучайся!"»,<br>
           що фінансується Агентством США з міжнародного розвитку (USAID) та здійснюється Pact в Україні, 2018
         </p>
       </div>
-      <div>
+      <div class="right-item">
         <p>Copyright  © 2018. All Rights Reserved</p>
         <ul>
-          <li><a href="#"><mat-icon>search</mat-icon></a></li>
-          <li><a href="#"><mat-icon>search</mat-icon></a></li>
+          <li>
+            <a href="#">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+              <g>
+              <path id="Facebook__x28_alt_x29_" d="M90,15.001C90,7.119,82.884,0,75,0H15C7.116,0,0,7.119,0,15.001v59.998
+		          C0,82.881,7.116,90,15.001,90H45V56H34V41h11v-5.844C45,25.077,52.568,16,61.875,16H74v15H61.875C60.548,31,59,32.611,59,35.024V41
+		          h15v15H59v34h16c7.884,0,15-7.119,15-15.001V15.001z" /></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="169.063px" height="169.063px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
+                   xml:space="preserve"><g>
+              <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		          c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		          c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		           c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+
+              <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		          C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		          c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+
+              <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		           c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		          C135.661,29.421,132.821,28.251,129.921,28.251z" /></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

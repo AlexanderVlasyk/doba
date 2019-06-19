@@ -119,4 +119,146 @@ header {
 .footer {
   background-color: #262527;
   color: #ffffff;
+
+  .container {
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .footer-top {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    ul {
+      padding-left: 0;
+      margin: 0;
+
+      li {
+        list-style-type: none;
+      }
+    }
+
+    .title {
+      color: #ffffff;
+      font-family: "Roboto Condensed";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.16px;
+      margin: 0 0 30px;
+    }
+
+    a {
+      color: #ffffff;
+      font-family: "Roboto Condensed";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-decoration: none;
+      transition: .25s;
+
+      &:hover {
+        color: #fb6c33;
+      }
+    }
+
+    p {
+      color: #dddddd;
+      font-family: "Roboto Condensed";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+
+    .batton {
+      display: inline-block;
+      text-align: center;
+      height: 32px;
+      color: #ffffff;
+      font-family: "Roboto Condensed";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.15px;
+      padding: 0 29px;
+      border-radius: 16px;
+      width: auto;
+      background-color: #fb6c33;
+
+      &:hover {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  .footer-bootom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .left-item {
+      width: 65%;
+
+      p {
+        color: #939292;
+        font-family: "Roboto Condensed";
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        margin: 0;
+      }
+    }
+
+    .right-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      p {
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+
+    ul {
+      padding-left: 10px;
+      display: flex;
+      margin: 0;
+
+      li {
+        list-style-type: none;
+        margin: 0 10px;
+
+        a {
+          transition: .25s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            height: 20px;
+            width: 20px;
+            fill: #fff;
+          }
+
+          &:hover {
+            svg {
+              fill: #fb6c33;
+            }
+          }
+        }
+      }
+    }
+  }
 }

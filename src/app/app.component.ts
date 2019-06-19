@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'doba';
   selected = 'eng';
-
+  logoUrl = 'assets/images/logo.png';
+  logoName = 'Нова Доба';
 }
