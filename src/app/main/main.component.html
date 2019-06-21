@@ -5,21 +5,23 @@
     </h2>
     <p>Переглядайте актуальні проекти та діліться їми з друзями</p>
     <div>
-      <div class="mini-logo">
-        <img src="#" alt="Alternate Text" />
-      </div>
-      <div class="slider">
-        <a href="#" class="item">
-          <h3><mat-icon>arrow_forward_ios</mat-icon> ІНТЕРАКТИВНИЙ КУРС ГРОМАДСЬКОЇ ОСВІТИ</h3>
-          <img src="#" alt="Alternate Text" />
-        </a>
-        <a href="#" class="item">
-          <h3><mat-icon>arrow_forward_ios</mat-icon> ДІАЛОГ - ІНТЕГРАЦІЯ</h3>
-          <img src="#" alt="Alternate Text" />
-        </a>
-      </div>
     </div>
   </div>
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel"
+                      [config]="slideConfig2"
+                      (init)="slickInit2($event)">
+    <div ngxSlickItem *ngFor="let carousel of carousels" class="slide">
+      <a href="#" class="item">
+        <h3 class="text"><mat-icon>arrow_forward_ios</mat-icon> ІНТЕРАКТИВНИЙ КУРС ГРОМАДСЬКОЇ ОСВІТИ</h3>
+        <div class="picture">
+          <img src="{{ carousel.img }}" alt="Alternate Text" />
+        </div>
+        <div class="mini-logo">
+          <img src="../assets/images/Layer_7.png" alt="Alternate Text" />
+        </div>
+      </a>
+    </div>
+  </ngx-slick-carousel>
 </section>
 <section class="main-sec-news" style="background-image: url('assets/images/bg-news.jpg');">
   <div class="container">
@@ -131,38 +133,69 @@
   </div>
 </section>
 <section class="main-sec-public">
+  <div class="after" style="background-image: url('assets/images/plift.png');"></div>
   <div class="container">
     <div class="content">
       <div class="text">
-      <h2 class="title">Публікації</h2>
-      <span>Великий вибір різноманітних книжок</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
-      </p>
-      <a class="link" href="#">Бібліотека</a>
+        <h2 class="title">Публікації</h2>
+        <span>Великий вибір різноманітних книжок</span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
+        </p>
+        <a class="link" href="#">Бібліотека</a>
       </div>
     </div>
   </div>
 </section>
-<section class="main-sec-about">
+<section class="main-sec-about" style="background-image: url('assets/images/bg-img-z.png');">
+  <div class="after" style="background-image: url('assets/images/bg-z.png');"></div>
   <div class="container">
-    <div class="text">
-      <h2 class="title">Про нас</h2>
-      <span>
-        Українська організація з европейськими
-        стандартами
-      </span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        <br><br>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-      </p>
-      <a class="link" href="#">Детальніше</a>
+    <div class="content">
+      <div class="text">
+        <h2 class="title">Про нас</h2>
+        <span>
+          Українська організація з европейськими
+          стандартами
+        </span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <a class="link" href="#">Детальніше</a>
+      </div>
+      <div class="blocl-img">
+        <div class="item"><img src="assets/images/IMG_0296.jpg" alt="Alternate Text" /></div>
+        <div class="item"><img src="assets/images/IMG_0260.jpg" alt="Alternate Text" /></div>
+        <div class="item"><img src="assets/images/IMG_0865.jpg" alt="Alternate Text" /></div>
+        <div class="item"><img src="assets/images/IMG_4876.jpg" alt="Alternate Text" /></div>
+      </div>
     </div>
   </div>
 </section>
-<section class="main-sec-feedback">
+<section class="main-sec-feedback" style="background-image: url('assets/images/Shape_9.png');">
   <div class="container">
-    5
+    <div class="sec-title">
+      <h2 class="title">Зворотній зв’язок</h2>
+      <p>Актуальні фідбеки про нашу діяльність</p>
+    </div>
+    <ngx-slick-carousel class="carousel"
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig"
+                        (init)="slickInit($event)"
+                       >
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div class="icon">
+          <img src="{{ slide.img }}" alt="" width="100%">
+        </div>
+        <div class="text">
+          <div class="title"><h2 class="name">Степан Самаринський</h2><span class="data">02 - 02 - 2018</span></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+
+    <!-- <button (click)="addSlide()">Add</button>
+  <button (click)="removeSlide()">Remove</button>
+  <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+  <button (click)="slickModal.unslick()">unslick</button>
+      -->
   </div>
 </section>

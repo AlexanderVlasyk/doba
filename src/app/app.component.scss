@@ -23,12 +23,12 @@ header {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+
     .top-header {
-      width: 100%;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding: 5px 0;
+      padding: 5px 200px 5px 0;
 
       nav {
         a {
@@ -55,9 +55,12 @@ header {
     .bottom-header {
       display: flex;
       align-content: stretch;
+      padding-right: 200px;
+      background-color: #00248b;
 
       .item {
         flex: 1 1 100%;
+        border-right: 1px #fff solid;
       }
 
       .mat-button {
@@ -68,6 +71,34 @@ header {
         font-family: "Roboto Condensed";
         font-size: 18px;
         font-weight: 400;
+        transition: .25s;
+        position: relative;
+        padding-left: 30px;
+        padding-right: 65px;
+        text-align: left;
+        height: 45px;
+
+        &:hover {
+          background-color: #fb6c33;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 30px;
+          width: 0;
+          height: 0;
+          transform: translateY(-50%);
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid;
+          margin: 0 4px;
+        }
+
+        &:after {
+          color: rgba(255,255,255, 1);
+        }
       }
 
       .mat-raised-button {
@@ -81,6 +112,7 @@ header {
         display: flex;
         align-item: center;
         justify-content: center;
+        border-right: 1px #fff solid;
 
         ::ng-deep .mat-button-wrapper {
           display: flex;
@@ -93,7 +125,7 @@ header {
 
   mat-select {
     margin-left: 20px;
-    width: 150px;
+    width: 90px;
     font-size: 15px;
     font-weight: 400;
     color: #528ad5;

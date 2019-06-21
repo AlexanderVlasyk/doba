@@ -13,3 +13,72 @@ app-root {
     margin-top: auto;
   }
 }
+.main-sec-feedback .slick-dots {
+  text-align: left !important;
+}
+
+.main-sec-feedback .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 12px;
+  height: 12px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+  opacity: 1;
+  background-color: #262527;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ .main-sec-feedback  .slick-dots li.slick-active button:before {
+      background-color: #f7674d;
+    opacity: 1;
+}
+.main-sec-slider .slide.slick-current {
+  opacity: 1;
+}
+.main-sec-slider .slide {
+  opacity: .6;
+}
+.main-sec-slider .slide {
+  padding-left: 100px;
+}
+.main-sec-slider .slide {
+  .mini-logo {
+    display: none;
+  }
+}
+.main-sec-slider .slide.slick-current {
+  .mini-logo {
+    display: block;
+  }
+}
+.main-sec-slider .slide {
+  width: 100%;
+}
+.main-sec-slider .slide.slick-current {
+}
+.main-sec-slider .carousel {
+  padding-left: 268px;
+}
+.main-sec-slider .nav-btn.next-slide {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  opacity: 0.33;
+
+  svg {
+    width: 138px;
+    fill: #fb6c33
+  }
+  transition: .25s;
+  &:hover {
+    opacity: 1;
+  }
+}
