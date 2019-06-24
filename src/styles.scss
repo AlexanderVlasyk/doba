@@ -6,7 +6,9 @@ body {
   margin: 0;
   font-family: Roboto, "Roboto Condensed", "Helvetica Neue", sans-serif;
 }
-
+app-about-us {
+  background-color: #edeef3;
+}
 app-root {
   display: flex;
   flex-direction: column;
@@ -83,5 +85,44 @@ app-root {
   transition: .25s;
   &:hover {
     opacity: 1;
+  }
+}
+.breadcrumbs {
+  ul {
+    margin: 0;
+    padding: 30px 0;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      &:first-of-type {
+        a {
+          margin-left: 0;
+        }
+      }
+      a {
+        font-size: 14px;
+        color: #323946;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        text-decoration: none;
+        margin-left: 10px;
+
+        &:hover {
+          color: #00ade9;
+        }
+      }
+
+      &:not(:first-child):before {
+        content: ">";
+        margin-left: 10px;
+      }
+
+      &:last-child a {
+        color: #737f8f;
+        pointer-events: none;
+      }
+    }
   }
 }

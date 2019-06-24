@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { MatTabsModule } from '@angular/material/tabs';
+
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'news', component: NewsComponent },
@@ -55,7 +57,8 @@ const appRoutes: Routes = [
     MatCheckboxModule,
     MatMenuModule,
     MatIconModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

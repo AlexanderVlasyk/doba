@@ -34,7 +34,7 @@ header {
         a {
           padding: 20px;
           color: #56575c;
-          font-family: "Myriad Pro";
+          font-family: "Myriad Pro", sans-serif;
           font-size: 15px;
           font-weight: 400;
           text-decoration: none;
@@ -68,7 +68,7 @@ header {
         border-radius: 0;
         width: 100%;
         color: #ffffff;
-        font-family: "Roboto Condensed";
+        font-family: "Roboto Condensed", sans-serif;
         font-size: 18px;
         font-weight: 400;
         transition: .25s;
@@ -106,7 +106,7 @@ header {
         border-radius: 0;
         box-shadow: none;
         color: #ffffff;
-        font-family: "Roboto Condensed";
+        font-family: "Roboto Condensed", sans-serif;
         font-size: 18px;
         font-weight: 400;
         display: flex;
@@ -116,7 +116,7 @@ header {
 
         ::ng-deep .mat-button-wrapper {
           display: flex;
-          align-item: center;
+          align-items: center;
           justify-content: center;
         }
       }
@@ -129,20 +129,20 @@ header {
     font-size: 15px;
     font-weight: 400;
     color: #528ad5;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
 
     ::ng-deep .mat-select-value-text {
       color: #528ad5;
-      font-family: "Roboto Condensed";
+      font-family: "Roboto Condensed", sans-serif;
       text-decoration: underline;
       text-transform: uppercase;
     }
 
     .mat-select-value-text {
       color: #528ad5;
-      font-family: "Roboto Condensed";
+      font-family: "Roboto Condensed", sans-serif;
       text-decoration: underline;
       text-transform: uppercase;
     }
@@ -176,7 +176,7 @@ header {
 
     .title {
       color: #ffffff;
-      font-family: "Roboto Condensed";
+      font-family: "Roboto Condensed", sans-serif;
       font-size: 16px;
       font-weight: 700;
       line-height: 1;
@@ -187,7 +187,7 @@ header {
 
     a {
       color: #ffffff;
-      font-family: "Roboto Condensed";
+      font-family: "Roboto Condensed", sans-serif;
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
@@ -201,7 +201,7 @@ header {
 
     p {
       color: #dddddd;
-      font-family: "Roboto Condensed";
+      font-family: "Roboto Condensed", sans-serif;
       font-size: 16px;
       font-weight: 400;
       line-height: 26px;
@@ -212,7 +212,7 @@ header {
       text-align: center;
       height: 32px;
       color: #ffffff;
-      font-family: "Roboto Condensed";
+      font-family: "Roboto Condensed", sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 32px;
@@ -239,7 +239,7 @@ header {
 
       p {
         color: #939292;
-        font-family: "Roboto Condensed";
+        font-family: "Roboto Condensed", sans-serif;
         font-size: 12px;
         font-weight: 300;
         line-height: 22px;
@@ -255,7 +255,8 @@ header {
 
       p {
         color: #ffffff;
-        font-family: "Roboto Condensed";
+        font-family: "Roboto Condensed", sans-serif;
+        ;
         font-size: 13px;
         font-weight: 400;
         line-height: 24px;
