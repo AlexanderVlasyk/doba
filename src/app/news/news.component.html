@@ -1,3 +1,79 @@
-<p>
-  news works!
-</p>
+<section>
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a>Блог</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-content">
+      <div class="left-content">
+        <div class="title-block">
+          <h1 class="title">Новини</h1>
+        </div>
+          <div class="all-news">
+            <div class="item-news" *ngFor="let new of news">
+              <a href="#" class="news-img" [style.backgroundImage]="'url('+ new.imageUrl +')'">
+              </a>
+              <div class="test-news">
+                <a class="title-news" href="#">Презентація підручника «3D Демократії: думаємо, дбаємо, діємо» у Броварській ЗОШ </a>
+                <p>
+                  20 квітня 2018 р. в актовій залі Броварської ЗОШ І-ІІІ ступенів №2 відбувся інформаційний семінар для вчителів навчальних закладів
+                  міста Бровари, котрі будуть викладати інтегрований курс з громадянської освіти для учнів 10 класів у 2018-2019...
+                  навчальному році.
+                </p>
+                <span class="data"><mat-icon>access_time</mat-icon>  04.08.2018</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="right-content">
+        <div class="item-naw-bar">
+          <div class="title">Теги</div>
+          <div class="all-filter">
+            <button class="button">course</button>
+            <button class="button">event</button>
+            <button class="button">design</button>
+            <button class="button">language</button>
+            <button class="button">health & fitness</button>
+            <button class="button">office</button>
+            <button class="button">business</button>
+            <button class="button">music</button>
+            <button class="button">development</button>
+            <button class="button">marketing</button>
+            <button class="button">web</button>
+            <button class="button">IT & Software</button>
+          </div>
+        </div>
+        <div class="item-naw-bar">
+          <div class="title">Архів</div>
+          <div class="list-filter">
+            <a class="item-list" href="#">2017 <span>(<span>27</span>)</span></a>
+            <a class="item-list" href="#">2016 <span>(<span>2</span>)</span></a>
+            <a class="item-list" href="#">2015 <span>(<span>26</span>)</span></a>
+            <a class="item-list" href="#">2014 <span>(<span>23</span>)</span></a>
+            <a class="item-list" href="#">2013 <span>(<span>69</span>)</span></a>
+            <a class="item-list" href="#">2012 <span>(<span>259</span>)</span></a>
+          </div>
+        </div>
+        <div class="item-naw-bar">
+        <div class="title">Популярне</div>
+        <div class="popul-news">
+          <a href="#" *ngFor="let populNew of populNews">
+            <div class="img" [style.backgroundImage]="'url('+ populNew.imageUrl +')'"></div>
+            <div class="text">
+              <p>
+                У межах вказаного проекту розроблено навчальні матеріали курсу з громадянської освіти
+                для учнів 10 класу.
+              </p>
+            </div>
+            <span class="data">04.08.2018 </span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

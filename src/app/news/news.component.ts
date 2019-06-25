@@ -6,7 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.scss']
 })
 export class NewsComponent implements OnInit {
+  news = [
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" }
+  ];
+  populNews = [
+    { imageUrl: "../assets/images/laptop.png" },
+    { imageUrl: "../assets/images/laptop.png" }
 
+  ];
   constructor() { }
 
   ngOnInit() {
