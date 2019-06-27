@@ -63,7 +63,7 @@ header {
         border-right: 1px #fff solid;
       }
 
-      .mat-button {
+      .mat-button, .mat-raised-button {
         background-color: #00248b;
         border-radius: 0;
         width: 100%;
@@ -74,14 +74,22 @@ header {
         transition: .25s;
         position: relative;
         padding-left: 30px;
-        padding-right: 65px;
-        text-align: left;
+        padding-right: 30px;
+        text-align: center;
         height: 45px;
+
+        &.search {
+          width: 75px;
+        }
 
         &:hover {
           background-color: #fb6c33;
         }
 
+        &.active {
+          background-color: #fb6c33;
+        }
+        /*
         &:after {
           content: '';
           position: absolute;
@@ -95,7 +103,7 @@ header {
           border-top: 5px solid;
           margin: 0 4px;
         }
-
+        */
         &:after {
           color: rgba(255,255,255, 1);
         }

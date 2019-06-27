@@ -18,6 +18,8 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 1;
+    margin-bottom:50px;
+    margin-top: 0;
   }
 
   p {
@@ -28,3 +30,124 @@
     line-height: 26px;
   }
 }
+.element-block {
+  display: grid;
+  grid-template-columns: 569px 1fr;
+  grid-gap: 50px;
+
+  .map {
+    agm-map {
+      height: 100%;
+      min-height: 389px;
+    }
+  }
+}
+.text-map {
+  .title {
+    color: #fb6c33;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: underline;
+  }
+
+  p {
+    color: #56575c;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .item-info {
+    .line {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      padding: 20px 0;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 1px;
+        background-color: #fb6c33;
+      }
+    }
+
+    p, a {
+      color: #242424;
+      font-family: "Roboto Condensed";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.08px;
+      text-decoration: none;
+      margin: 0;
+    }
+  }
+}
+.form-block {
+  margin-top: 45px;
+  border-top: 1px #528ad5 solid;
+  padding-top: 15px;
+
+  .title-form {
+    text-align: center;
+
+    .title {
+      color: #56575c;
+      font-family: "Roboto Condensed";
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    p {
+      color: #56575c;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+  }
+
+  form {
+    .example-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 55px;
+    }
+
+    .textarea-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .button-container {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .submit {
+        height: 38px;
+        border-radius: 19px;
+        background-color: #fb6c33;
+        color: #e8e9ec;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        padding: 0 60px;
+        border: 0;
+        outline: none;
+      }
+    }
+  }
+}
+

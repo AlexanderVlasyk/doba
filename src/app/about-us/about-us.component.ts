@@ -7,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
   pictures = [
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" }
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0296.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0296.jpg" },
   ];
   comands = [
     { img: "../assets/images/Layer_750.png" },

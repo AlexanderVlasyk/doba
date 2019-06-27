@@ -2,7 +2,7 @@
   <div class="container">
     <div class="breadcrumbs">
       <ul>
-        <li><a href="#">Головна</a></li>
+        <li><a routerLink="/main">Головна</a></li>
         <li><a>Блог</a></li>
       </ul>
     </div>
@@ -15,10 +15,10 @@
         </div>
           <div class="all-news">
             <div class="item-news" *ngFor="let new of news">
-              <a href="#" class="news-img" [style.backgroundImage]="'url('+ new.imageUrl +')'">
+              <a routerLink="/news-inner"  class="news-img" [style.backgroundImage]="'url('+ new.imageUrl +')'">
               </a>
               <div class="test-news">
-                <a class="title-news" href="#">Презентація підручника «3D Демократії: думаємо, дбаємо, діємо» у Броварській ЗОШ </a>
+                <a class="title-news" routerLink="/news-inner">Презентація підручника «3D Демократії: думаємо, дбаємо, діємо» у Броварській ЗОШ </a>
                 <p>
                   20 квітня 2018 р. в актовій залі Броварської ЗОШ І-ІІІ ступенів №2 відбувся інформаційний семінар для вчителів навчальних закладів
                   міста Бровари, котрі будуть викладати інтегрований курс з громадянської освіти для учнів 10 класів у 2018-2019...

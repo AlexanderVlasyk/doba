@@ -9,50 +9,40 @@
         <a routerLink="/about-us" routerLinkActive="active">Про нас</a>
         <a routerLink="/news" routerLinkActive="active">Новини</a>
         <a routerLink="/contact" routerLinkActive="active">Контакти</a>
+        <a routerLink="/about-page" routerLinkActive="active">About Us</a>
       </nav>
-      <mat-select [(value)]="selected">
-        <mat-option value="eng">ENGLISH</mat-option>
-        <mat-option value="ua">UKRAINE</mat-option>
-        <mat-option value="ru">RUSSIAN</mat-option>
-      </mat-select>
+      <!--
+  <mat-select [(value)]="selected">
+    <mat-option value="eng">ENGLISH</mat-option>
+    <mat-option value="ua">UKRAINE</mat-option>
+    <mat-option value="ru">RUSSIAN</mat-option>
+  </mat-select>
+      -->
     </div>
     <div class="bottom-header">
       <div class="item">
-        <button mat-button [matMenuTriggerFor]="menu">ПРОГРАМИ</button>
-        <mat-menu #menu="matMenu">
-          <a mat-menu-item>Item 1</a>
-          <a mat-menu-item>Item 2</a>
-        </mat-menu>
+        <a routerLinkActive="active" mat-raised-button>ПРОГРАМИ</a>
+        <!--<button mat-button [matMenuTriggerFor]="menu">ПРОГРАМИ</button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item>Item 1</a>
+    <a mat-menu-item>Item 2</a>
+  </mat-menu>
+      -->
+    </div>
+      <div class="item">
+        <a  routerLinkActive="active" mat-raised-button>БІБЛІОТЕКА</a>
       </div>
       <div class="item">
-        <button mat-button [matMenuTriggerFor]="menu">БІБЛІОТЕКА</button>
-        <mat-menu #menu="matMenu">
-          <a mat-menu-item>Item 1</a>
-          <a mat-menu-item>Item 2</a>
-        </mat-menu>
+        <a  routerLinkActive="active" mat-raised-button>ГРОМАДСЬКА ОСВІТА</a>
+
       </div>
       <div class="item">
-        <button mat-button [matMenuTriggerFor]="menu">ГРОМАДСЬКА ОСВІТА</button>
-        <mat-menu #menu="matMenu">
-          <a mat-menu-item>Item 1</a>
-          <a mat-menu-item>Item 2</a>
-        </mat-menu>
+        <a  routerLinkActive="active" mat-raised-button>ІСТОРИЧНА ОСВІТА</a>
       </div>
       <div class="item">
-        <button mat-button [matMenuTriggerFor]="menu">ІСТОРИЧНА ОСВІТА</button>
-        <mat-menu #menu="matMenu">
-          <a mat-menu-item>Item 1</a>
-          <a mat-menu-item>Item 2</a>
-        </mat-menu>
+        <a  routerLinkActive="active" mat-raised-button>СПІЛЬНОТА</a>
       </div>
-      <div class="item">
-        <button mat-button [matMenuTriggerFor]="menu">СПІЛЬНОТА</button>
-        <mat-menu #menu="matMenu">
-          <a mat-menu-item>Item 1</a>
-          <a mat-menu-item>Item 2</a>
-        </mat-menu>
-      </div>
-      <button mat-raised-button><mat-icon>search</mat-icon></button>
+      <button class="search" mat-raised-button><mat-icon>search</mat-icon></button>
     </div>
   </div>
 </header>

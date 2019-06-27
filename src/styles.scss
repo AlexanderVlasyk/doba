@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Roboto, "Roboto Condensed", "Helvetica Neue", sans-serif;
 }
-app-about-us, app-news, app-contact {
+app-about-us, app-news, app-contact, app-news-inner, app-about-page {
   background-color: #edeef3;
 }
 app-root {
@@ -20,6 +20,7 @@ app-root {
 }
 .main-sec-feedback .slick-dots {
   text-align: left !important;
+  bottom: -70px;
 }
 
 .main-sec-feedback .slick-dots li button:before {
@@ -123,6 +124,50 @@ app-root {
         color: #737f8f;
         pointer-events: none;
       }
+    }
+  }
+}
+.slaider-news .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background-color: #fb6c33;
+  transition: .25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  &:hover {
+    background-color: #528ad5;
+  }
+
+  i {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-left: 3px #fff solid;
+    border-bottom: 3px #fff solid;
+    position: relative;
+  }
+
+  &.next-slide {
+    right: 0;
+
+    i {
+      right: 3px;
+      transform: rotate(-135deg)
+    }
+  }
+
+  &.prev-slide {
+    left: 0;
+
+    i {
+      left: 3px;
+      transform: rotate(45deg)
     }
   }
 }

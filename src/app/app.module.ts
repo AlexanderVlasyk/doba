@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MainComponent } from './main/main.component';
+import { NewsInnerComponent } from './news-inner/news-inner.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatSelectModule } from '@angular/material/select';
@@ -20,11 +22,16 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
+
+
 
 const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'news', component: NewsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'news-inner', component: NewsInnerComponent },
+  { path: 'about-page', component: AboutPageComponent },
  // { path: 'hero/:id', component: HeroDetailComponent },
   {
     path: 'main',
@@ -43,15 +50,20 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    NewsInnerComponent,
     MainComponent,
     AboutUsComponent,
     NewsComponent,
     ContactComponent,
+    AboutPageComponent,
   ],
   imports: [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
+    ),
+    AgmCoreModule.forRoot(
+     // <-- {apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'}
     ),
     BrowserModule,
     AppRoutingModule,

@@ -4,9 +4,9 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\about-us",
-    "\\src\\app\\main",
-    "\\src\\app\\news"
+    "\\src\\app\\contact",
+    "\\src\\app\\page-not-found"
   ],
-  "SelectedNode": "\\src\\app\\news\\news.component.ts",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }

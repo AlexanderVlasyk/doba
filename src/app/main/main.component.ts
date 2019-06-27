@@ -23,10 +23,12 @@ export class MainComponent implements OnInit {
     { img: "../assets/images/Layer_5.png" },
   ];
   carousels = [
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" },
-    { img: "../assets/images/laptop.png" }
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0296.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+  
   ];
 
   slideConfig = {
