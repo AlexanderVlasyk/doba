@@ -5,8 +5,11 @@
     "\\src\\app",
     "\\src\\app\\about-us",
     "\\src\\app\\contact",
-    "\\src\\app\\page-not-found"
+    "\\src\\app\\library",
+    "\\src\\app\\news",
+    "\\src\\app\\news-inner",
+    "\\src\\app\\projects"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\styles.scss",
   "PreviewInSolutionExplorer": false
 }

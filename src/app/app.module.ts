@@ -23,6 +23,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
+import { LibraryComponent } from './library/library.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 
@@ -32,6 +34,8 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'news-inner', component: NewsInnerComponent },
   { path: 'about-page', component: AboutPageComponent },
+  { path: 'library', component: LibraryComponent },
+  { path: 'project', component: ProjectsComponent },
  // { path: 'hero/:id', component: HeroDetailComponent },
   {
     path: 'main',
@@ -56,6 +60,8 @@ const appRoutes: Routes = [
     NewsComponent,
     ContactComponent,
     AboutPageComponent,
+    LibraryComponent,
+    ProjectsComponent,
   ],
   imports: [
     RouterModule.forRoot(
