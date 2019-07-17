@@ -1,0 +1,44 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
+})
+export class ProjectsComponent implements OnInit {
+  pictures = [
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0296.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0865.jpg" },
+    { img: "../assets/images/IMG_4876.jpg" },
+    { img: "../assets/images/IMG_0296.jpg" },
+  ];
+  comands = [
+    { img: "../assets/images/Layer_750.png" },
+    { img: "../assets/images/Layer_751.png" },
+    { img: "../assets/images/Layer_783.png" },
+    { img: "../assets/images/Layer_784.png" },
+    { img: "../assets/images/Layer_750.png" },
+    { img: "../assets/images/Layer_751.png" },
+    { img: "../assets/images/Layer_783.png" },
+    { img: "../assets/images/Layer_784.png" }
+  ];
+
+  pdfs = [
+    { title: "Pdf-документ 1" },
+    { title: "Pdf-документ 2" },
+    { title: "Pdf-документ 3" },
+    { title: "Pdf-документ 4" },
+    { title: "Pdf-документ 5" },
+    { title: "Pdf-документ 6" }
+  ];
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

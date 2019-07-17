@@ -1,0 +1,76 @@
+<section>
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li><a routerLink="/main">Головна</a></li>
+        <li><a>Бібліотека</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-content">
+      <div class="left-content">
+        <div class="title-block">
+          <h1 class="title">Бібліотека</h1>
+          <p>
+            Учительська - це те місце , де стає зрозуміло, що учителі "також люди". Тут можна поговорити не тільки про роботу...
+            Учитель - це не професія, а стан душі. Прочитайте, можливо це про Вас. Подумайте: чи всім цим фактам місце у Вашому житті. ікавого та критичного Вам читання.
+          </p>
+        </div>
+        <div class="all-elements">
+          <a href="#" class="teacher-material-item" *ngFor="let libr of libreris">
+            <div class="before" [style.backgroundImage]="'url('+ libr.before +')'"></div>
+            <div class="material-image">
+              
+              <img src="{{ libr.img }}" alt="book">
+            </div>
+            <div class="material-name">{{ libr.name }}</div>
+          </a>
+          <div class="item-news" *ngFor="let new of news">
+            <a routerLink="/news-inner" class="news-img" [style.backgroundImage]="'url('+ new.imageUrl +')'">
+            </a>
+            <div class="test-news">
+              <a class="title-news" routerLink="/news-inner">Презентація підручника «3D Демократії: думаємо, дбаємо, діємо» у Броварській ЗОШ </a>
+              <p>
+                20 квітня 2018 р. в актовій залі Броварської ЗОШ І-ІІІ ступенів №2 відбувся інформаційний семінар для вчителів навчальних закладів
+                міста Бровари, котрі будуть викладати інтегрований курс з громадянської освіти для учнів 10 класів у 2018-2019...
+                навчальному році.
+              </p>
+              <span class="data"><mat-icon>access_time</mat-icon>  04.08.2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="item-naw-bar">
+          <div class="title">Теги</div>
+          <div class="all-filter">
+            <button class="button">course</button>
+            <button class="button">event</button>
+            <button class="button">design</button>
+            <button class="button">language</button>
+            <button class="button">health & fitness</button>
+            <button class="button">office</button>
+            <button class="button">business</button>
+            <button class="button">music</button>
+            <button class="button">development</button>
+            <button class="button">marketing</button>
+            <button class="button">web</button>
+            <button class="button">IT & Software</button>
+          </div>
+        </div>
+        <div class="item-naw-bar">
+          <div class="title">Архів</div>
+          <div class="list-filter">
+            <a class="item-list" href="#">2017 <span>(<span>27</span>)</span></a>
+            <a class="item-list" href="#">2016 <span>(<span>2</span>)</span></a>
+            <a class="item-list" href="#">2015 <span>(<span>26</span>)</span></a>
+            <a class="item-list" href="#">2014 <span>(<span>23</span>)</span></a>
+            <a class="item-list" href="#">2013 <span>(<span>69</span>)</span></a>
+            <a class="item-list" href="#">2012 <span>(<span>259</span>)</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

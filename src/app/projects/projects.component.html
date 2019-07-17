@@ -1,0 +1,87 @@
+<section>
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li><a routerLink="/main">Головна</a></li>
+        <li><a>Проекти</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-content">
+      <div class="title-block">
+        <div class="right-elem">
+          <h1 class="title">
+            Інтерактивний курс
+            громадської освіти
+          </h1>
+          <div class="logo">
+            <img src="../assets/images/Layer_7.png" alt="Alternate Text" />
+          </div>
+        </div>
+        <div class="picture" [style.backgroundImage]="'url(../assets/images/IMG_4876.jpg)'">
+          
+        </div>
+      </div>
+      <div class="text-info-project">
+        <h2 class="title">Опис програми:</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      </div>
+      <div class="tab-block">
+        <mat-tab-group>
+          <mat-tab label="Етапи участі">
+            <div class="text"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p></div>
+            <div class="img-block">
+              <div class="item" *ngFor="let picture of pictures"><a href="#"><img src="{{ picture.img }}" alt="Alternate Text" /></a></div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Публікації">
+            <div class="text"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p></div>
+            <div class="all-man">
+              <div *ngFor="let comand of comands" class="about-item">
+                <div class="about-image">
+                  <div>
+                    <img src="{{ comand.img }}" alt="Alternate Text" />
+                  </div>
+                </div>
+                <div class="about-text">
+                  <h3>Керівник проекту:</h3>
+                  <h2>ПЕТРО КЕНДЗЬОР</h2>
+                  <h3>Населений пункт:</h3>
+                  <p>Чернігівська область, Ніжин ,м. Львів, вул. Галицька, 1, оф. 5</p>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="Досвід">
+            <div class="text"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p></div>
+
+            <div class="pdf-block">
+              <div *ngFor="let pdf of pdfs" class="how-item">
+                <div class="before">
+                  <img src="../assets/images/clip.png" alt="Alternate Text" />
+                </div>
+                <div class="how-image">
+                  <img src="../assets/images/pdf.png" alt="">
+                </div>
+                <div class="how-description">
+                  <h2>{{ pdf.title }}</h2>
+                  <p>Тема розділу в pdf форматі, яку можна завантажити</p>
+                </div>
+              </div>
+
+            </div>
+          </mat-tab>
+          <mat-tab label="Методичні матеріали">
+            <h1>Some more tab content</h1>
+            <p>...</p>
+          </mat-tab>
+          <mat-tab label="Долучитися">
+            <h1>Some more tab content</h1>
+            <p>...</p>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</section>
