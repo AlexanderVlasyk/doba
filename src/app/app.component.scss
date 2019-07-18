@@ -303,3 +303,24 @@ header {
     }
   }
 }
+
+@media (max-width: 1650px) {
+  header .nav-header .top-header, header .nav-header .bottom-header {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1480px) {
+  header .nav-header .bottom-header .mat-button, header .nav-header .bottom-header .mat-raised-button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header {
+    grid-template-columns: 250px 1fr;
+
+    .logo img {
+      max-width: 440px;
+      height: auto;
+      width: 90%;
+    }
+  }
+ }

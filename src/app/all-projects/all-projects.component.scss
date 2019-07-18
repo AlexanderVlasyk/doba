@@ -1,0 +1,123 @@
+.container {
+  display: block;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title-block {
+  text-align: center;
+
+  .title {
+    color: #56575c;
+    font-family: "Roboto Condensed";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+}
+.all-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 40px;
+  margin-bottom: 80px;
+  .item {
+    display: grid;
+    grid-template-columns: 788px 1fr;
+
+    .picture {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 470px;
+      position: relative;
+      z-index: -2;
+      padding-top: 70px;
+
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(38, 37, 39, 0.5);
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+
+      .title-item {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        padding: 0 10px;
+        img {
+          margin-right: 21px;
+        }
+      }
+
+      .logo {
+        width: 333px;
+        height: 186px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 30px;
+        left: -176px;
+        img {
+          max-width: 85%;
+          height: auto;
+          max-height: 100%;
+        }
+      }
+    }
+
+    .text {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+
+      p {
+        color: #56575c;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        margin: 0;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 272px;
+        height: 53px;
+        border-radius: 27px;
+        background-color: #fb6c33;
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: none;
+        transition: .25s;
+
+        &:hover {
+          background-color: #00248b;
+        }
+      }
+    }
+  }
+}

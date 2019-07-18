@@ -3,13 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\about-us",
-    "\\src\\app\\contact",
+    "\\src\\app\\all-projects",
     "\\src\\app\\library",
+    "\\src\\app\\main",
     "\\src\\app\\news",
-    "\\src\\app\\news-inner",
     "\\src\\app\\projects"
   ],
-  "SelectedNode": "\\src\\styles.scss",
+  "SelectedNode": "\\src\\app\\library\\library.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -25,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import { LibraryComponent } from './library/library.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { AllProjectsComponent } from './all-projects/all-projects.component';
 
 
 
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
   { path: 'about-page', component: AboutPageComponent },
   { path: 'library', component: LibraryComponent },
   { path: 'project', component: ProjectsComponent },
+  { path: 'all-projects', component: AllProjectsComponent },
  // { path: 'hero/:id', component: HeroDetailComponent },
   {
     path: 'main',
@@ -62,6 +64,7 @@ const appRoutes: Routes = [
     AboutPageComponent,
     LibraryComponent,
     ProjectsComponent,
+    AllProjectsComponent,
   ],
   imports: [
     RouterModule.forRoot(

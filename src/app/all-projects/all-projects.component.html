@@ -1,0 +1,25 @@
+<section>
+  <div class="container">
+    <div class="page-content">
+      <div class="title-block">
+        <h1 class="title">
+          Наші проекти
+        </h1>
+      </div>
+      <div class="all-projects">
+        <div class="item" *ngFor="let project of projects">
+          <div class="picture" [style.backgroundImage]="'url('+ project.imgPicture +')'">
+            <h2 class="title-item"> <img src="../assets/images/arrow.png" alt=">>" />{{project.title}}</h2>
+            <div class="logo">
+              <img src="{{project.imgLogo}}" alt="{{project.nameLogo}}" />
+            </div>
+          </div>
+          <div class="text">
+            <p>{{project.textInfo}}</p>
+            <a routerLink="/project">Детальніше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
